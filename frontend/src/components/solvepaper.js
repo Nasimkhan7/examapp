@@ -35,7 +35,6 @@ const SolvePaper = () => {
   };
 
   const answerForm = {
-    author: "",
     paper: "",
     name: "",
     email: "",
@@ -53,7 +52,7 @@ const SolvePaper = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        window.location.replace("/manage");
+        window.location.replace("/submitted");
         console.log(data);
         Swal.fire({
           icon: "success",

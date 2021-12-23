@@ -1,16 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const Model = require("../models/paperModel");
+const Model = require("../models/answerModel");
 
 router.post("/add", (req, res) => {
-  console.log("add request in user router");
-  console.log(req.body);
-
-  // promise method
-  new Model(req.body)
+  let data = req.body;
+  console.log(data);
+  new Model(data)
     .save()
     .then(() => {
-      console.log("user data saved");
+      console.log("Answers Data Saved");
       res.status(200).json({ message: "success" });
     })
     .catch((err) => {
@@ -20,10 +18,9 @@ router.post("/add", (req, res) => {
 });
 
 router.get("/getall", (req, res) => {
-  // promise method
   Model.find({})
     .then((data) => {
-      console.log("fetched all videos");
+      console.log("Answers Data fetched");
       res.status(200).json(data);
     })
     .catch((err) => {
@@ -35,7 +32,7 @@ router.get("/getall", (req, res) => {
 router.get("/getbyid/:id", (req, res) => {
   Model.findById(req.params.id)
     .then((data) => {
-      console.log("Paper Data fetched");
+      console.log("Answers Data fetched");
       res.status(200).json(data);
     })
     .catch((err) => {
