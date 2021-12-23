@@ -2,6 +2,7 @@ import "./signup.css";
 import { Button, Grid, Link, TextField} from '@mui/material'
 import { Formik } from "formik";
 import app_config from "../config";
+import { NavLink } from "react-router-dom";
 
 const SignUp = () => {
 
@@ -101,9 +102,9 @@ fetch(url + "/user/add",reqOpt)
             </Grid>
 
             <Grid item className="mt-3 ">
-              <Link href="#" variant="body2 mt-3">
+              <NavLink to="/login" variant="body2 mt-3">
                 {"Don't have an account? Sign Up"}
-              </Link>
+              </NavLink>
             </Grid>
 
             
