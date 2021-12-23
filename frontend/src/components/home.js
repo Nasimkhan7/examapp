@@ -27,7 +27,7 @@ const Home = () => {
       
 
 
-  <div className="container-fluid bg-light bg-gradient border border-danger ">
+  <div className="container-fluid bg-light bg-gradient">
     <div className="row mx-5 mx-5">
     <div className="card mb-3  py-3" style={{maxWidth: '540px'}}>
   <div className="row g-0">
@@ -43,7 +43,7 @@ const Home = () => {
     </div>
   </div>
 </div>
-<div className="card mb-3 py-3 py-3 mx-auto" style={{maxWidth: '540px'}}>
+<div className="card mb-3 py-3 py-3 " style={{maxWidth: '540px'}}>
   <div className="row g-0 ">
     <div className="col-md-4 mx-auto shadow">
       <img src="..." class="img-fluid rounded-start" alt="..."/>

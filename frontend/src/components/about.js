@@ -1,5 +1,6 @@
 import { Button } from '@mui/material';
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import "./about.css";
 
 function AboutUs() {
@@ -106,7 +107,137 @@ function AboutUs() {
          </div>
        </div>
 
+       <section >
+          <div className="container my-3 py-5 text-center">
+            <div className="row mb-5">
+              <div className='col-'>
+                <h1>Our Team</h1>
+                <p className="mt-3 text-mute">The LogiQ, the best website development and digital marketing company in the USA, offers a 360-degree digital services portfolio</p>
+              </div>
 
+            </div>
+
+                <div className="row ">
+                  <div className="col-lg-3 col-md-6">
+                      <div className='card'>
+                        <div className='card-body'>
+                          <img src="https://download.cnet.com/a/img/resize/392c42bcf7a4964dc8be1b2a384573a8024bea42/catalog/2018/09/17/5f62d071-0406-4bc0-bfcd-9936206c3222/imgingest-456472590754299888.png?auto=webp&fit=crop&width=64" className="img-fluid rounded-circle w-50 mb-3"alt=""/>
+                         <h3>Name.....</h3>
+                         <h5>Lead Writer</h5>
+                         <p>Website Design is a WordPress website design  </p>
+                         <div className='d-flex flex-row justify-content-center'>
+                           <div className='p-4'>
+                             <NavLink to='#'>
+                               <i className='fas fa-facebook'></i>
+                             </NavLink>
+                           </div>
+                           <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-twitter'></i>
+                             </NavLink>
+                           </div>
+                           <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-instagram'></i>
+                             </NavLink>
+                           </div>
+                           
+                         </div>
+
+                        </div>
+                      </div>
+                  </div>
+
+                  <div className="col-lg-3 col-md-6">
+                    <div className='card'>
+                      <div className='card-body'>
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksTvoARH_Q8ft6DZnIrB2C5LTUO9BuEfDGl6JGwXUgv8MfjxOA2LoN93nLpdIPVO67gs&usqp=CAU'alt="" className='img-fluid rounded-circle w-50 mb-3'/>
+                        <h3>Nikki</h3>
+                        <h5>Tally erp9</h5>
+                        <p>Tally Solutions Pvt. Ltd. is an Indian multinational</p>
+                        <div className='d-flex flex-row justify-content-center'>
+                            <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-facebook'></i>
+                             </NavLink>
+                           </div>
+                           <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-instagram'></i>
+                             </NavLink>
+                           </div>
+                           <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-twitter'></i>
+                             </NavLink>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="col-lg-3 col-md-6">
+                    <div className='card'>
+                      <div className='card-body'>
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksTvoARH_Q8ft6DZnIrB2C5LTUO9BuEfDGl6JGwXUgv8MfjxOA2LoN93nLpdIPVO67gs&usqp=CAU'alt="" className='img-fluid rounded-circle w-50 mb-3'/>
+                        <h3>Nikki</h3>
+                        <h5>Tally erp9</h5>
+                        <p>Tally Solutions Pvt. Ltd. is an Indian multinational</p>
+                        <div className='d-flex flex-row justify-content-center'>
+                            <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-facebook'></i>
+                             </NavLink>
+                           </div>
+                           <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-instagram'></i>
+                             </NavLink>
+                           </div>
+                           <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-twitter'></i>
+                             </NavLink>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-3 col-md-6">
+                    <div className='card'>
+                      <div className='card-body'>
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksTvoARH_Q8ft6DZnIrB2C5LTUO9BuEfDGl6JGwXUgv8MfjxOA2LoN93nLpdIPVO67gs&usqp=CAU'alt="" className='img-fluid rounded-circle w-50 mb-3'/>
+                        <h3>Nikki</h3>
+                        <h5>Tally erp9</h5>
+                        <p>Tally Solutions Pvt. Ltd. is an Indian multinational</p>
+                        <div className='d-flex flex-row justify-content-center'>
+                            <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-facebook'></i>
+                             </NavLink>
+                           </div>
+                           <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-instagram'></i>
+                             </NavLink>
+                           </div>
+                           <div className='p-4'>
+                             <NavLink to="#">
+                             <i className='fas fa-twitter'></i>
+                             </NavLink>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+          </div>
+       
+
+       </section>
 
 
 

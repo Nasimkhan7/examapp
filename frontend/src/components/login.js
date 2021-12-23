@@ -2,6 +2,7 @@ import Swal from "sweetalert2";
 import {Formik} from 'formik';
 import app_config from "../config";
 import "./login.css";
+import {NavLink} from 'react-router-dom';
 import { ProductContext } from "../productContext";
 import { useContext } from "react";
 
@@ -63,13 +64,13 @@ const Login =() => {
 
     return(
         <div class="container mt-5">
-        <div class="card">
             <div class="row">
              
 
-             <div class="col-md-8 mx-auto">
-             <div class="card-body" my-card-body>
-             <p class="h3 text-center bg-info mt-3">Login</p>
+             <div class="col-md-4 mx-auto">
+        <div class="card">
+             <div class="card-body bg-info" my-card-body>
+             <p class="h3 text-center  mt-3">Login</p>
             
 
           <Formik initialValues={loginForm} onSubmit={loginsubmit}>
@@ -88,13 +89,10 @@ const Login =() => {
                         <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"/> Remember me
                       </label>
 
-                      <label class="checkbox ">
-                        <input type="checkbox" value="Forget Password" id="Forget Password" name="Forget password"/> Forget Password
-                      </label>
                      
             
-                    <button type="submit" class="btn btn-outline-primary w-25 mt-5">Sign Up </button>
-                    <a href="#" class="text-muted mt-5" style={{display: 'block'}}>Already Have an acount</a>
+                    <button type="submit" class="btn btn-outline-primary w-25 mt-5 text-end">Login </button>
+                    <NavLink to="/signup" class="text-muted mt-5" style={{display: 'block'}}>Already Have an acount</NavLink>
             
             
                       </form>
