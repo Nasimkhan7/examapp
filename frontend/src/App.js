@@ -52,7 +52,7 @@ function App() {
 
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/" element={<Navigate replace to="/home" />} />
-            <Route component={<SolvePaper />} path={"/solve/:id"}></Route>
+            <Route element={<SolvePaper />} path={"/solve/:id"}></Route>
           </Routes>
         </BrowserRouter>
       </ProdductProvider>
