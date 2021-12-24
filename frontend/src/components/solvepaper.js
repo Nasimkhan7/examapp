@@ -38,12 +38,25 @@ const SolvePaper = () => {
     paper: "",
     name: "",
     email: "",
+    password: "",
     data: {},
+  };
+
+  const generatePassword = () => {
+    var length = 8,
+      charset =
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+      retVal = "";
+    for (var i = 0, n = charset.length; i < length; ++i) {
+      retVal += charset.charAt(Math.floor(Math.random() * n));
+    }
+    return retVal;
   };
 
   const submitAnswer = (values) => {
     values.paper = paper._id;
     values.data = paper.questions;
+    values.password = generatePassword();
 
     fetch(url + "/answer/add", {
       method: "POST",
@@ -52,12 +65,18 @@ const SolvePaper = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        window.location.replace("/submitted");
         console.log(data);
+        console.log({ id: data._id, password: data.password });
+        sessionStorage.setItem(
+          "key",
+          JSON.stringify({ id: data._id, password: data.password })
+        );
         Swal.fire({
           icon: "success",
           title: "Success",
           text: "Your response has been submitted",
+        }).then(() => {
+          window.location.replace("/submitted");
         });
       });
   };

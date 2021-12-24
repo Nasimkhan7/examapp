@@ -6,6 +6,7 @@ const schema = new Schema({
   name: String,
   email: String,
   data: Object,
+  password: String,
   created: { type: Date, default: new Date() },
 });
 

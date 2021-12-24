@@ -1,110 +1,126 @@
 import Swal from "sweetalert2";
-import {Formik} from 'formik';
+import { Formik } from "formik";
 import app_config from "../config";
 import "./login.css";
-import {NavLink} from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import { ProductContext } from "../productContext";
 import { useContext } from "react";
 
-const Login =() => {
-    const url =app_config.api_url;
+const Login = () => {
+  const url = app_config.api_url;
 
-    const {setLoggedin} = useContext(ProductContext);
-    
-    const loginForm = {
-        email: '',
-        password : '',
-    }
-     
+  const { setLoggedin } = useContext(ProductContext);
 
-    const loginsubmit = (value) => {
-        console.log(value);
+  const loginForm = {
+    email: "",
+    password: "",
+  };
 
-      const reqOpt ={
-          method: 'POST',
-          body: JSON.stringify(value),
-          headers: {
-              "Content-type":"application/json",
-          }
-      };
+  const loginsubmit = (value) => {
+    console.log(value);
 
-
-        fetch(url+'/user/backendlogin',reqOpt)
-        .then((res) =>{
-            if (res.status ==200){
-                console.log("login success");
-                res.json().then((data)=>{
-                    sessionStorage.setItem('user',JSON.stringify(data));
-                    setLoggedin(true);
-                    window.location.replace('/addpaper');
-                });
-                // toast. success("Loggedin Successfully")
-
-                Swal.fire({
-                    icon :"success",
-                    title : "Auto close alert ",
-                    text : "login success",
-
-
-                });
-            }else if(res.status==300){
-                console.log("login failed");
-                //toast.error("Login Failed");
-
-                Swal.fire({
-                    icon:"error",
-                    title :"Failed",
-                    text :"login failed",
-                });
-            }
-        });
-
-
+    const reqOpt = {
+      method: "POST",
+      body: JSON.stringify(value),
+      headers: {
+        "Content-type": "application/json",
+      },
     };
 
-    return(
-        <div class="container mt-5">
-            <div class="row">
-             
+    fetch(url + "/user/backendlogin", reqOpt).then((res) => {
+      if (res.status == 200) {
+        console.log("login success");
+        res.json().then((data) => {
+          sessionStorage.setItem("user", JSON.stringify(data));
+          setLoggedin(true);
+          window.location.replace("/dashboard");
+        });
+        // toast. success("Loggedin Successfully")
 
-             <div class="col-md-4 mx-auto">
-        <div class="card">
-             <div class="card-body bg-info" my-card-body>
-             <p class="h3 text-center  mt-3">Login</p>
-            
+        Swal.fire({
+          icon: "success",
+          title: "Auto close alert ",
+          text: "login success",
+        });
+      } else if (res.status == 300) {
+        console.log("login failed");
+        //toast.error("Login Failed");
 
-          <Formik initialValues={loginForm} onSubmit={loginsubmit}>
-                { ({values, handleSubmit, handleChange}) => (
-                    <form onSubmit={handleSubmit} >
+        Swal.fire({
+          icon: "error",
+          title: "Failed",
+          text: "login failed",
+        });
+      }
+    });
+  };
 
-    
-                    <label for="Email " class="mt-5">Email</label>
-                    <input id="email" type="Email" class="form-control" placeholder="Email" onChange={handleChange} value={values.email}  />
-            
-            
-                    <label for="Password " class="mt-3">Password</label>
-                    <input id="password" type="password" class="form-control" placeholder="Password" onChange={handleChange} value={values.password} />
-            
+  return (
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <div class="card">
+            <div class="card-body bg-info" my-card-body>
+              <p class="h3 text-center  mt-3">Login</p>
+
+              <Formik initialValues={loginForm} onSubmit={loginsubmit}>
+                {({ values, handleSubmit, handleChange }) => (
+                  <form onSubmit={handleSubmit}>
+                    <label for="Email " class="mt-5">
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      type="Email"
+                      class="form-control"
+                      placeholder="Email"
+                      onChange={handleChange}
+                      value={values.email}
+                    />
+
+                    <label for="Password " class="mt-3">
+                      Password
+                    </label>
+                    <input
+                      id="password"
+                      type="password"
+                      class="form-control"
+                      placeholder="Password"
+                      onChange={handleChange}
+                      value={values.password}
+                    />
+
                     <label class="checkbox">
-                        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"/> Remember me
-                      </label>
+                      <input
+                        type="checkbox"
+                        value="remember-me"
+                        id="rememberMe"
+                        name="rememberMe"
+                      />{" "}
+                      Remember me
+                    </label>
 
-                     
-            
-                    <button type="submit" class="btn btn-outline-primary w-25 mt-5 text-end">Login </button>
-                    <NavLink to="/signup" class="text-muted mt-5" style={{display: 'block'}}>Already Have an acount</NavLink>
-            
-            
-                      </form>
-                ) }
-          </Formik>
-             </div>
-            </div>   
+                    <button
+                      type="submit"
+                      class="btn btn-outline-primary w-25 mt-5 text-end"
+                    >
+                      Login{" "}
+                    </button>
+                    <NavLink
+                      to="/signup"
+                      class="text-muted mt-5"
+                      style={{ display: "block" }}
+                    >
+                      Already Have an acount
+                    </NavLink>
+                  </form>
+                )}
+              </Formik>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    )
-
-
-}
+  );
+};
 export default Login;

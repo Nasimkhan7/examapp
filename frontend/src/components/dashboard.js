@@ -30,6 +30,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import { Link, NavLink } from "react-router-dom";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -89,6 +90,7 @@ function Dashboard() {
                 <StyledTableCell align="right">Carbs&nbsp;(g)</StyledTableCell>
                 <StyledTableCell align="right"></StyledTableCell>
                 <StyledTableCell align="right"></StyledTableCell>
+                <StyledTableCell align="right"></StyledTableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -104,7 +106,7 @@ function Dashboard() {
                     {paper.max_marks}
                   </StyledTableCell>
                   <StyledTableCell align="right">
-                    {paper.created}
+                    {new Date(paper.created).toLocaleDateString()}
                   </StyledTableCell>
                   <StyledTableCell align="right">
                     <Button
@@ -120,6 +122,17 @@ function Dashboard() {
                     <Button variant="contained" color="secondary">
                       Delete
                     </Button>
+                  </StyledTableCell>
+
+                  <StyledTableCell align="right">
+                    <Link
+                      component={Button}
+                      variant="contained"
+                      color="success"
+                      to={"/viewsol/" + paper._id}
+                    >
+                      View Answers
+                    </Link>
                   </StyledTableCell>
                 </StyledTableRow>
               ))}
@@ -184,10 +197,7 @@ function Dashboard() {
         }}
       >
         <h1>Dashboard</h1>
-        <Grid container spacing={5}>
-          <Grid item>{displayPaper()}</Grid>
-          <Grid item></Grid>
-        </Grid>
+        {displayPaper()}
       </Box>
     </div>
   );

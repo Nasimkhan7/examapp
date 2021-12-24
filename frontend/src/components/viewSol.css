@@ -1,0 +1,6 @@
+.solution {
+  margin: 3rem;
+  border: 1px solid red;
+  padding: 2rem;
+  box-sizing: border-box;
+}
