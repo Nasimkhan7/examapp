@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import { NavLink } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
@@ -132,7 +133,7 @@ const Home = () => {
                       <i className="fa fa-times mr-2 "></i><del>React components kjgkgf hdstrt</del> 
                    </li>
             </ul>
-          <a href="#" className="btn btn-primary btn block p-2 shadow rounded-pill">Admission now</a>
+          <NavLink to="/Admissionform" className="btn btn-primary btn block p-2 shadow rounded-pill">Admission now</NavLink>
 
       </div>
     </div>
