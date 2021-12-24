@@ -85,7 +85,7 @@ fetch(url + "/user/add",reqOpt)
                       value={values.password}
                     />
     
-                    <Button type="submit" color="primary" variant="contained"className="mt-5 w-100" >sing up </Button>
+                    <Button type="submit" color="primary" variant="contained"className="mt-5 w-100" >SignUp </Button>
     
                     {/* <a
                       href="/"
@@ -96,9 +96,9 @@ fetch(url + "/user/add",reqOpt)
                     </a> */}
 
                     <Grid item xs className="mt-3">
-              <Link href="#" variant="body2 mt-3">
+              <NavLink to="signup" variant="body2 mt-3">
                 Forgot password?
-              </Link>
+              </NavLink>
             </Grid>
 
             <Grid item className="mt-3 ">

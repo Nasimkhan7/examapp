@@ -17,7 +17,7 @@ const Home = () => {
          <Button variant="outlined text-center mt-2" color="error">
           Our Service
         </Button>
-        <Button variant="outlined text-center mt-2" color="error">
+        <Button variant="contained text-center mt-2" color="warning">
           More Info
         </Button>
          </div>
