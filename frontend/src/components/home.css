@@ -1,18 +1,21 @@
-.btn{
-   background: linear-gradient(to right,#0083b0,#00b4db);
-   color: #514b64; 
+.btn {
+  background: linear-gradient(to right, #0083b0, #00b4db);
+  color: #514b64;
 }
 
-.rounded-lg{
-    border-radius: 1rem !important;
+.rounded-lg {
+  border-radius: 1rem !important;
 }
 
-.text-small{
-    font-size: 0.9rem;
+.text-small {
+  font-size: 0.9rem;
 }
-.custom-serperator{
-    width: 5rem;
-    height: 6px;
-    border-radius: 1rem;
+.custom-serperator {
+  width: 5rem;
+  height: 6px;
+  border-radius: 1rem;
+}
 
+.mycards {
+  margin-top: -5rem;
 }
