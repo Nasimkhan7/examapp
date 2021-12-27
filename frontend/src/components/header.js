@@ -51,9 +51,20 @@ const Header = (props) => {
   };
 
   return (
-    <header>
+    
+        
+
+    <header className="">
+
+     <NavLink to="/Admissionform" className=" nav-link text-end">Get Admission</NavLink>   
+
+        {/* <NavLink to="#" className="nav-link text-warning float-end">
+        Get Admission
+        </NavLink>    */}
+
+
       <svg xmlns="http://www.w3.org/2000/svg" style={{ display: "none" }}>
-        <symbol id="bootstrap" viewBox="0 0 118 94">
+        <symbol id="bootstrap" viewBox="0 0 118 94 mt-5">
           <title>Bootstrap</title>
           <path
             fill-rule="evenodd"
@@ -101,6 +112,27 @@ const Header = (props) => {
                   Home
                 </NavLink>
               </li>
+              <li>
+                <NavLink to="/Aboutus" className="nav-link text-white">
+                  About Us
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/Course" className="nav-link text-white">
+                  Course
+                </NavLink>
+              </li>
+
+              <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            {/* <li><hr class="dropdown-divider"/></li> */}
+          </ul>
+        </li>
 
               {displayLoggedIn()}
             </ul>

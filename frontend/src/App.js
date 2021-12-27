@@ -16,6 +16,7 @@ import Branch from "./components/branch";
 import SolvePaper from "./components/solvepaper";
 import SubmitScreen from "./components/submittedScreen";
 import ViewSolutions from "./components/viewSol";
+import Admissionform from "./components/Admissionform";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -53,6 +54,8 @@ function App() {
             <Route path="/Branch" element={<Branch />} />
             <Route path="/submitted" element={<SubmitScreen />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/admissionform" element={<Admissionform />} />
+
             <Route path="/" element={<Navigate replace to="/home" />} />
             <Route element={<SolvePaper />} path={"/solve/:id"}></Route>
             <Route element={<ViewSolutions />} path={"/viewsol/:id"}></Route>

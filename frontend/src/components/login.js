@@ -56,7 +56,7 @@ const Login = () => {
   };
 
   return (
-    <div class="container mt-5">
+    <div class="container-fluid mybg">
       <div class="row">
         <div class="col-md-4 mx-auto">
           <div class="card">
@@ -66,7 +66,7 @@ const Login = () => {
               <Formik initialValues={loginForm} onSubmit={loginsubmit}>
                 {({ values, handleSubmit, handleChange }) => (
                   <form onSubmit={handleSubmit}>
-                    <label for="Email " class="mt-5">
+                    <label for="Email " class="mt-2">
                       Email
                     </label>
                     <input
@@ -90,7 +90,7 @@ const Login = () => {
                       value={values.password}
                     />
 
-                    <label class="checkbox">
+                    <label class="checkbox mt-3">
                       <input
                         type="checkbox"
                         value="remember-me"
@@ -102,13 +102,14 @@ const Login = () => {
 
                     <button
                       type="submit"
-                      class="btn btn-outline-primary w-25 mt-5 text-end"
+                      class="btn btn-outline-primary w-25 mt-5 text-end float-end text-center"
                     >
                       Login{" "}
                     </button>
+
                     <NavLink
                       to="/signup"
-                      class="text-muted mt-5"
+                      class="text-muted  py-3"
                       style={{ display: "block" }}
                     >
                       Already Have an acount
