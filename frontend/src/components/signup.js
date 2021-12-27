@@ -37,11 +37,13 @@ fetch(url + "/user/add",reqOpt)
     <div class="container mt-5">
       
         <div class="row">
-          <div class="col-md">
+          
+          {/* <div class="col-md">
             <div class="img-back"></div>
-          </div>
+          </div> */}
 
-          <div class="col-md">
+          <div class="col-md col-sm col-lg col-lx" >
+            <div className="card">
             <div class="card-body my-card-body">
               <p class="h3">New Create Account</p>
               <p class="text-muted">Sign Up to Continue</p>
@@ -114,6 +116,7 @@ fetch(url + "/user/add",reqOpt)
 
             </Formik>
 
+            </div>
             </div>
           </div>
         </div>
