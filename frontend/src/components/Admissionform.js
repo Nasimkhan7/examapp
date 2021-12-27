@@ -5,13 +5,14 @@ import "./Admissionform.css";
 
 function Admissionform() {
     return(
-     <div className='container-fluid bg-info'>
-          <section className='header'>
-                    <div>
-                        <img src='https://www.cactuslanguagetraining.com/wp-content/uploads/2017/09/pexels-photo-346885-e1505314125190.jpeg'alt=''/>
-                    </div>
-                </section>
+        <div>
+            <div className=' add container-fluid bg-dark '>
+                <h1 className="text-white text-center py-3" >GET ADMISSION ONLINE</h1>
+                <p className='text-white text-center mt-3'>WELCOME</p>
+            </div>
 
+
+     <div className='container-fluid bg-info mt-4'>
          <div className='container  '>
             <form class="row g-3">
                 <h1 className='text-center'>Apply as a Student</h1>
@@ -72,7 +73,7 @@ function Admissionform() {
             </form>
         </div>  
         </div>
-
+    </div>
     );
 };
 export default Admissionform;

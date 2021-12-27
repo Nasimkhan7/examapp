@@ -4,6 +4,7 @@ import update from "immutability-helper";
 import app_config from "../config";
 import Swal from "sweetalert2";
 import { Button } from "@mui/material";
+import "./addpaper.css";
 
 const AddPaper = () => {
   const [currentUser, setCurrentUser] = useState(
@@ -129,13 +130,15 @@ const AddPaper = () => {
   };
 
   return (
-    <div>
+    <div className="mybody">
       <div className="container">
+      <h1 className="text-center py-3">CCC Exam paper</h1>
         <div className="card mt-5">
           <div className="card-body">
             <Formik initialValues={paperform} onSubmit={formSubmit}>
               {({ values, handleSubmit, handleChange }) => (
                 <form onSubmit={handleSubmit}>
+                 
                   <div class="input-group mt-3">
                     <span class="input-group-text">Title</span>
                     <input
@@ -174,13 +177,13 @@ const AddPaper = () => {
                     </div>
                   </div>
 
-                  <Button
+                  {/* <Button
                     type="submit"
                     className="w-25 mt-5"
                     variant="outlined"
                   >
                     Create Paper
-                  </Button>
+                  </Button> */}
                 </form>
               )}
             </Formik>
@@ -229,6 +232,13 @@ const AddPaper = () => {
         >
           Add New Question
         </Button>
+              <Button
+                    type="submit"
+                    className="w-25 mt-5 float-end"
+                    variant="contained"
+                  >
+                    Create Paper
+                  </Button>
       </div>
     </div>
   );

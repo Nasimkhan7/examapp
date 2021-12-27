@@ -35,7 +35,7 @@ fetch(url + "/user/add",reqOpt)
 
   return (
     <div class="container mt-5">
-      <div class="card">
+      
         <div class="row">
           <div class="col-md">
             <div class="img-back"></div>
@@ -117,7 +117,6 @@ fetch(url + "/user/add",reqOpt)
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
