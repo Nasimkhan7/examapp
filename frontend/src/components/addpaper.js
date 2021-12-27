@@ -79,6 +79,19 @@ const AddPaper = () => {
     setQuestionList(newData);
   };
 
+  const setQuestion = (q_i, index, e) => {
+    // const options = {};
+    const questions = {};
+
+    // options[index] = { $set: e.target.value };
+    questions[q_i] = { $set: e.target.value };
+
+    const newData = update(questionList, questions);
+
+    console.log(newData);
+    setQuestionList(newData);
+  };
+
   const addOption = (q_i) => {
     const questions = {};
 
@@ -132,13 +145,12 @@ const AddPaper = () => {
   return (
     <div className="mybody">
       <div className="container">
-      <h1 className="text-center py-3">CCC Exam paper</h1>
+        <h1 className="text-center py-3">CCC Exam paper</h1>
         <div className="card mt-5">
           <div className="card-body">
             <Formik initialValues={paperform} onSubmit={formSubmit}>
               {({ values, handleSubmit, handleChange }) => (
                 <form onSubmit={handleSubmit}>
-                 
                   <div class="input-group mt-3">
                     <span class="input-group-text">Title</span>
                     <input
@@ -232,13 +244,13 @@ const AddPaper = () => {
         >
           Add New Question
         </Button>
-              <Button
-                    type="submit"
-                    className="w-25 mt-5 float-end"
-                    variant="contained"
-                  >
-                    Create Paper
-                  </Button>
+        <Button
+          type="submit"
+          className="w-25 mt-5 float-end"
+          variant="contained"
+        >
+          Create Paper
+        </Button>
       </div>
     </div>
   );
