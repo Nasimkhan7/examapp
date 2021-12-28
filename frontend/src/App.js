@@ -54,9 +54,8 @@ function App() {
             <Route path="/Branch" element={<Branch />} />
             <Route path="/submitted" element={<SubmitScreen />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/admissionform" element={<Admissionform />} />
+            <Route path="/admission" element={<Admissionform />} />
 
-            <Route path="/" element={<Navigate replace to="/home" />} />
             <Route element={<SolvePaper />} path={"/solve/:id"}></Route>
             <Route element={<ViewSolutions />} path={"/viewsol/:id"}></Route>
           </Routes>

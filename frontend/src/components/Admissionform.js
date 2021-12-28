@@ -68,7 +68,7 @@ function Admissionform() {
                 </div>
             </div> */}
             <div class="col-12">
-                <button type="submit" class="btn btn-primary float-end">Sign in</button>
+                <button type="submit" class="btn btn-primary float-end">Submit</button>
             </div>
             </form>
         </div>  

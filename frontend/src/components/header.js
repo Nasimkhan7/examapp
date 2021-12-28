@@ -1,4 +1,4 @@
-import { Button, Switch } from "@mui/material";
+import { Button, Link, Switch } from "@mui/material";
 import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ProductContext } from "../productContext";
@@ -56,7 +56,7 @@ const Header = (props) => {
 
     <header className="">
 
-     <NavLink to="/Admissionform" className=" nav-link text-end">Get Admission</NavLink>   
+     <NavLink to="/admission" className=" nav-link text-end">Get Admission</NavLink>   
 
         {/* <NavLink to="#" className="nav-link text-warning float-end">
         Get Admission

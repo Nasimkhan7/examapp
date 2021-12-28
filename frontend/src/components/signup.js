@@ -3,6 +3,7 @@ import { Button, Grid, Link, TextField} from '@mui/material'
 import { Formik } from "formik";
 import app_config from "../config";
 import { NavLink } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const SignUp = () => {
 
@@ -14,7 +15,7 @@ const signupform ={
 
 const url= app_config.api_url;
 
-const signupSubmit =(values) =>{
+const signupSubmit =(values, {resetForm }) =>{
   console.log(values);
 
 const reqOpt ={
@@ -29,6 +30,18 @@ fetch(url + "/user/add",reqOpt)
 .then ((res ) => res.json())
 .then ((data) =>{
   console.log (data);
+  resetForm();
+  Swal.fire({
+    icon: "success",
+    title:'I will close in 2 seconds',
+    text: 'You have registered Successfull',
+  }).then ( ()=>{
+    window.location.replace('/login')
+  }
+
+  )
+    
+  
   
 });
 };

@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
@@ -151,12 +151,12 @@ const Home = () => {
                   <del>React components kjgkgf hdstrt</del>
                 </li>
               </ul>
-              <a
-                href="#"
+              <Link
+                to="/admission"
                 className="btn btn-primary btn block p-2 shadow rounded-pill"
               >
                 Admission now
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -204,12 +204,12 @@ const Home = () => {
                   <del>React components kjgkgf hdstrt</del>
                 </li>
               </ul>
-              <a
-                href="#"
+              <Link
+                to="/admission"
                 className="btn btn-primary btn block p-2 shadow rounded-pill"
               >
                 Admission now
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -257,12 +257,12 @@ const Home = () => {
                   <del>React components kjgkgf hdstrt</del>
                 </li>
               </ul>
-              <a
-                href="#"
+              <Link
+                to="/admission"
                 className="btn btn-primary btn block p-2 shadow rounded-pill"
               >
                 Admission now
-              </a>
+              </Link>
             </div>
           </div>
         </div>
