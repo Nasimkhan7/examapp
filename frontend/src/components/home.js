@@ -18,7 +18,7 @@ const Home = () => {
             <Button variant="outlined text-center mt-2 text-warning" color="error">
               Our Service
             </Button>
-            <Button variant="contained text-center mt-2 text-white" color="warning">
+            <Button onClick={()=>alert("Thanks")} variant="contained text-center mt-2 text-white" color="warning">
               More Info
             </Button>
           </div>
