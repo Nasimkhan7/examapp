@@ -29,20 +29,21 @@ fetch(url + "/user/add",reqOpt)
 .then ((res ) => res.json())
 .then ((data) =>{
   console.log (data);
+  
 });
 };
 
 
   return (
-    <div class="container mt-5">
-      
+    <div class="container-fluid mysignup">
+      <div className="container mt-5 py-4 float-end">
         <div class="row">
           
           {/* <div class="col-md">
             <div class="img-back"></div>
           </div> */}
 
-          <div class="col-md col-sm col-lg col-lx" >
+          <div class="col-sm-6 col-md col-lg col-lx" >
             <div className="card">
             <div class="card-body my-card-body">
               <p class="h3">New Create Account</p>
@@ -119,6 +120,7 @@ fetch(url + "/user/add",reqOpt)
             </div>
             </div>
           </div>
+        </div>
         </div>
     </div>
   );

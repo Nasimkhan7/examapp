@@ -7,49 +7,50 @@ function AboutUs() {
     return (
         <div>
 
-       <div className='container-fluid bg-dark'>
+       <div className='container-fluid myadd'>
+         <h2 className='text-white text-mute text-center py-3 text-info'>Summer Trainig Center</h2>
          <div className='row'>
-           <div className='col-md-4 mt-5'>
-                <div class="card shadow border-primary" style={{width:'18rem'}}>
+           <div className='col-md-4 mt-5 main'>
+                {/* <div class="card shadow border-primary" style={{width:'18rem'}}>
                   <div className='inner'>
                   <img src="https://www.usnews.com/dims4/USNEWS/a6de483/2147483647/thumbnail/970x647/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F3a%2F21%2F338ee76746d1876c3fbeb43be04c%2F190502-computerprogrammer-stock.jpg" class="card-img-top" alt="..."/>
                   </div>
                 
                 <div class="card-body text-center">
-                  <h5 class="card-title bg-info">Web Developer</h5>
+                  <h5 class="card-title bg-info">Web Developer 01</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <Button variant="contained" color="secondary">
                   Read More
                 </Button>
                 </div>
-              </div>
+              </div> */}
 
            </div>
-           <div className='col-md-4 mt-5'>
+           {/* <div className='col-md-4 mt-5'>
            <div class="card shadow border-primary" style={{width:'18rem'}}>
              <div className='inner'>
               <img src="https://cdn.hswstatic.com/gif/computer-types-1.jpg" class="card-img-top" alt="..."/>
               </div>
               <div class="card-body shadow text-center ">
-                <h5 class="card-title">Faishon Designer</h5>
+                <h5 class="card-title">Faishon Designer 02</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <Button variant="contained" color="secondary">
                   Read More
                 </Button>
               </div>
             </div>
-           </div>
+           </div> */}
            <div className='col-md-4 mt-5'>
-           <div class="card shadow border-primary" style={{width:'18rem'}}>
+           {/* <div class="card shadow border-primary" style={{width:'18rem'}}>
               <img src="https://i.pcmag.com/imagery/articles/00tLYTqwmgFvacZlYPc5ecO-8..v1583853669.jpg" class="card-img-top" alt=""/>
               <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Card title 03</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <Button variant="contained" color="secondary">
                   Read More
                 </Button>
               </div>
-            </div>
+            </div> */}
            </div>
           
 
@@ -58,9 +59,9 @@ function AboutUs() {
 
 
           
-       <div className='container mt-5'>
+       <div className='container mt-5 '>
          <div className='row'>
-           <div className='col-md-4'>
+           <div className='col-md-4 main'>
                 <div class="card shadow border-primary" style={{width:'18rem'}}>
                   <div className='inner'>
                   <img src="https://cdn.mos.cms.futurecdn.net/SBhFLUo2vGVNTD8NDwgREU.jpg" class="card-img-top" alt="..."/>
@@ -76,13 +77,13 @@ function AboutUs() {
               </div>
 
            </div>
-           <div className='col-md-4'>
+           <div className='col-md-4 main'>
            <div class="card shadow border-primary" style={{width:'18rem'}}>
              <div className='inner'>
               <img src="https://image.shutterstock.com/image-photo/cute-emotional-boy-playing-video-260nw-1313791106.jpg" class="card-img-top" alt="..."/>
               </div>
               <div class="card-body shadow text-center ">
-                <h5 class="card-title">Faishon Designer</h5>
+                <h5 class="card-title">Faishon Designer1</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <Button variant="contained" color="secondary">
                   Read More
@@ -90,11 +91,11 @@ function AboutUs() {
               </div>
             </div>
            </div>
-           <div className='col-md-4'>
+           <div className='col-md-4 main'>
            <div class="card shadow border-primary" style={{width:'18rem'}}>
               <img src="https://www.headstartcourses.org.uk/wp-content/uploads/2020/05/Computer-Classes-for-Kids.jpg" class="card-img-top" alt=""/>
               <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Card title 2</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <Button variant="contained" color="secondary">
                   Read More
@@ -106,6 +107,8 @@ function AboutUs() {
 
          </div>
        </div>
+
+
 
        <section >
           <div className="container my-3 py-5 text-center">

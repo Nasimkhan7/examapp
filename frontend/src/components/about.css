@@ -3,3 +3,17 @@ h1{
     color: #555;
     font-weight: bold;
 }
+
+
+
+.myadd{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6QwiBA_JZuV1yD8h3AF2wOjaaTgA-HZ5frw&usqp=CAU) no-repeat;
+    background-size: cover;
+     height: 60vh;
+
+}
+
+
+.main{
+    margin-top: -7rem;
+}

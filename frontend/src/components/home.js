@@ -15,10 +15,10 @@ const Home = () => {
               FIIT <span class="text-primary">INFORMATION</span>{" "}
             </h1>
             <hr class="w-25 m-auto" />
-            <Button variant="outlined text-center mt-2" color="error">
+            <Button variant="outlined text-center mt-2 text-warning" color="error">
               Our Service
             </Button>
-            <Button variant="contained text-center mt-2" color="warning">
+            <Button variant="contained text-center mt-2 text-white" color="warning">
               More Info
             </Button>
           </div>
@@ -31,7 +31,7 @@ const Home = () => {
             <div className="card shadow">
               <div className="row g-0">
                 <div className="col-4">
-                  <img src="..." class="img-fluid rounded-start" alt="..." />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrs9ucpfR8EfKTDir6GhIL-qi_HlVfqOTpNg&usqp=CAU" class="img-fluid rounded-start" alt="..." />
                 </div>
                 <div class="col-8">
                   <div className="card-body">
@@ -55,12 +55,12 @@ const Home = () => {
             <div className="card shadow">
               <div className="row g-0">
                 <div className="col-4">
-                  <img src="..." class="img-fluid rounded-start" alt="..." />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwmcMlMNu7rUfQhh64OV_p2kuMfUPDwbTrsg&usqp=CAU" class="img-fluid rounded-start" alt="..." />
                 </div>
                 <div class="col-8">
                   <div className="card-body">
                     <h5 className="card-title text-center bg-warning">
-                      Card title 1
+                      Card title 2
                     </h5>
                     <p className="card-text">
                       This is a wider card with supporting text below as a
@@ -79,12 +79,12 @@ const Home = () => {
             <div className="card shadow">
               <div className="row g-0">
                 <div className="col-4">
-                  <img src="..." class="img-fluid rounded-start" alt="..." />
+                  <img src="https://wallpaperaccess.com/full/1218577.jpg" class="img-fluid rounded-start" alt="..." />
                 </div>
                 <div class="col-8">
                   <div className="card-body">
                     <h5 className="card-title text-center bg-warning">
-                      Card title 1
+                      Card title 3
                     </h5>
                     <p className="card-text">
                       This is a wider card with supporting text below as a
