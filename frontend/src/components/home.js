@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
@@ -15,9 +15,9 @@ const Home = () => {
               FIIT <span class="text-primary">INFORMATION</span>{" "}
             </h1>
             <hr class="w-25 m-auto" />
-            <Button variant="outlined text-center mt-2 text-warning" color="error">
+            <NavLink to="/Aboutus"  variant="outlined text-center mt-2 text-warning" color="error">
               Our Service
-            </Button>
+            </NavLink>
             <Button onClick={()=>alert("Thanks")} variant="contained text-center mt-2 text-white" color="warning">
               More Info
             </Button>

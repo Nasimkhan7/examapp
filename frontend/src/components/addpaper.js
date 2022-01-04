@@ -79,12 +79,11 @@ const AddPaper = () => {
     setQuestionList(newData);
   };
 
-  const setQuestion = (q_i, index, e) => {
-    // const options = {};
+  const setQuestion = (q_i, e) => {
+
     const questions = {};
 
-    // options[index] = { $set: e.target.value };
-    questions[q_i] = { $set: e.target.value };
+    questions[q_i] = { name: {$set: e.target.value} };
 
     const newData = update(questionList, questions);
 
@@ -189,13 +188,13 @@ const AddPaper = () => {
                     </div>
                   </div>
 
-                  {/* <Button
+                  <Button
                     type="submit"
                     className="w-25 mt-5"
                     variant="outlined"
                   >
                     Create Paper
-                  </Button> */}
+                  </Button>
                 </form>
               )}
             </Formik>
@@ -207,13 +206,14 @@ const AddPaper = () => {
             <div className="card-body">
               <div class="input-group mt-3">
                 <span class="input-group-text" id={"question" + index}>
-                  {question.name}
+                  Question {index+1}
                 </span>
                 <input
                   type="text"
                   class="form-control"
                   aria-label="Username"
                   aria-describedby={"question" + index}
+                  onChange={e => setQuestion(index, e)}
                 />
               </div>
               <div class="input-group mt-3">
@@ -244,13 +244,7 @@ const AddPaper = () => {
         >
           Add New Question
         </Button>
-        <Button
-          type="submit"
-          className="w-25 mt-5 float-end"
-          variant="contained"
-        >
-          Create Paper
-        </Button>
+        
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ import { useContext } from "react";
 const Login = () => {
   const url = app_config.api_url;
 
-  const { setLoggedin } = useContext(ProductContext);
+  const { setLoggedin, setCurrentUser } = useContext(ProductContext);
 
   const loginForm = {
     email: "",
@@ -33,6 +33,7 @@ const Login = () => {
         res.json().then((data) => {
           sessionStorage.setItem("user", JSON.stringify(data));
           setLoggedin(true);
+          setCurrentUser(data);
           window.location.replace("/dashboard");
         });
         // toast. success("Loggedin Successfully")

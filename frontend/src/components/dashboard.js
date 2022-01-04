@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@mui/material";
 import TableBody from "@mui/material/TableBody";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import app_config from "../config";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -31,6 +31,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Link, NavLink } from "react-router-dom";
+import { ProductContext } from "../productContext";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -56,6 +57,7 @@ function Dashboard() {
   const [paperList, setPaperList] = useState([]);
   const [loading, setLoading] = useState(true);
   const drawerWidth = 240;
+const {currentUser} = useContext(ProductContext);
 
   const url = app_config.api_url;
 
@@ -178,7 +180,7 @@ function Dashboard() {
   );
 
   return (
-    <div className="container">
+    <div className="container-fluid ret">
       {/* <Drawer
           variant="permanent"
           sx={{

@@ -15,7 +15,7 @@ export const ProdductProvider =props =>{
         }
     };
     const getCurrentUser =() =>{
-        let user =sessionStorage.getItem("User");
+        let user =sessionStorage.getItem("user");
         if (user){
             return JSON.parse(user);
         }else{

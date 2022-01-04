@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ret{
+  background: url(https://cutewallpaper.org/21/modern-background/hexagon-modern-background-vectors-free-download.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}

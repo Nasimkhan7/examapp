@@ -31,35 +31,6 @@ function Course() {
 
 
 
-
-
-
-
-            <header className='python bg-primary'>
-                <div className='container pt-4'>
-                    <div className='row'>
-                        <div className='col-ms-3 col-md-3 col-lg-4 col-xl-6 mt-3'>
-                            <h2 >A Better Way  To Leran To Code Websites ,Apps And Games</h2>
-                            <p>Published in: Microsoft Word. Lorem Ipsum refers to a dummy block of text that is often used in publishing and graphic design to fill gaps in the page before the actual words are</p>
-                            <Button variant="contained" color="secondary">
-                            Read More
-                            </Button>
-                        </div>
-
-
-                        <div className='col-ms-3 col-md-3 col-lg-4 col-xl-6'>
-                        <img src="https://www.envano.com/wp-content/uploads/2019/05/blog-post-feature-img-12.jpg" class="card-img-top py-3" alt="..."/>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </header>
-
-
-
-
                     <section className='container-fluid pt-3 bg-info '>
                         <h1 className='text-center py-3'>Courses</h1>
                         <h2>First Information Technology provides you various courses for students including</h2>
@@ -72,10 +43,10 @@ function Course() {
                             
                         </div>
                         <div class="row mt-4">
-                            <div class="col shadow border-primary text-center py-2">Python</div>
-                            <div class="col shadow border-primary text-center">Java</div>
-                            <div class="col shadow border-primary text-center">JavaScript</div>
-                            <div class="col shadow border-primary text-center">Django Framework</div>
+                            <div class="col-3 shadow border-primary text-center py-2">Python</div>
+                            <div class="col-3 shadow border-primary text-center">Java</div>
+                            <div class="col-3 shadow border-primary text-center">JavaScript</div>
+                            <div class="col-3 shadow border-primary text-center">Django Framework</div>
                             
                         </div>
                         <div class="row mt-4">

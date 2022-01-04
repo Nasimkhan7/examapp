@@ -6,70 +6,35 @@ import "./about.css";
 function AboutUs() {
     return (
         <div>
+          <div className=' container-fluid myadd'>
+          <h2 className='text-white text-mute text-center py-3 text-info'>About digipodium</h2>
+          
 
-       <div className='container-fluid myadd'>
-         <h2 className='text-white text-mute text-center py-3 text-info'>Summer Trainig Center</h2>
-         <div className='row'>
-           <div className='col-md-4 mt-5 main'>
-                {/* <div class="card shadow border-primary" style={{width:'18rem'}}>
-                  <div className='inner'>
-                  <img src="https://www.usnews.com/dims4/USNEWS/a6de483/2147483647/thumbnail/970x647/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F3a%2F21%2F338ee76746d1876c3fbeb43be04c%2F190502-computerprogrammer-stock.jpg" class="card-img-top" alt="..."/>
-                  </div>
-                
-                <div class="card-body text-center">
-                  <h5 class="card-title bg-info">Web Developer 01</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <Button variant="contained" color="secondary">
-                  Read More
-                </Button>
-                </div>
-              </div> */}
-
-           </div>
-           {/* <div className='col-md-4 mt-5'>
-           <div class="card shadow border-primary" style={{width:'18rem'}}>
-             <div className='inner'>
-              <img src="https://cdn.hswstatic.com/gif/computer-types-1.jpg" class="card-img-top" alt="..."/>
-              </div>
-              <div class="card-body shadow text-center ">
-                <h5 class="card-title">Faishon Designer 02</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <Button variant="contained" color="secondary">
-                  Read More
-                </Button>
-              </div>
+          <div className=' container text-center py-5 '>
+            <div className='card'>
+            <h1 >What we are</h1>
+            <p>Digipodium is a platform which reaches out to its audiences to help them enrich their lives in a 
+            bigger and better manner through specializations in various fields of</p>
             </div>
-           </div> */}
-           <div className='col-md-4 mt-5'>
-           {/* <div class="card shadow border-primary" style={{width:'18rem'}}>
-              <img src="https://i.pcmag.com/imagery/articles/00tLYTqwmgFvacZlYPc5ecO-8..v1583853669.jpg" class="card-img-top" alt=""/>
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title 03</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <Button variant="contained" color="secondary">
-                  Read More
-                </Button>
-              </div>
-            </div> */}
-           </div>
-          
-
-         </div>
-       </div>
+          </div>
+        
 
 
-          
+
+          </div>
+
+
        <div className='container mt-5 '>
          <div className='row'>
            <div className='col-md-4 main'>
-                <div class="card shadow border-primary" style={{width:'18rem'}}>
+                <div class="card shadow border-primary">
                   <div className='inner'>
                   <img src="https://cdn.mos.cms.futurecdn.net/SBhFLUo2vGVNTD8NDwgREU.jpg" class="card-img-top" alt="..."/>
                   </div>
                 
                 <div class="card-body text-center">
                   <h5 class="card-title bg-info">Web Developer</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Some quick example text to build on the</p>
                   <Button variant="contained" color="secondary">
                   Read More
                 </Button>
@@ -78,13 +43,13 @@ function AboutUs() {
 
            </div>
            <div className='col-md-4 main'>
-           <div class="card shadow border-primary" style={{width:'18rem'}}>
+           <div class="card shadow border-primary">
              <div className='inner'>
               <img src="https://image.shutterstock.com/image-photo/cute-emotional-boy-playing-video-260nw-1313791106.jpg" class="card-img-top" alt="..."/>
               </div>
               <div class="card-body shadow text-center ">
                 <h5 class="card-title">Faishon Designer1</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the .</p>
                 <Button variant="contained" color="secondary">
                   Read More
                 </Button>
@@ -92,11 +57,11 @@ function AboutUs() {
             </div>
            </div>
            <div className='col-md-4 main'>
-           <div class="card shadow border-primary" style={{width:'18rem'}}>
+           <div class="card shadow border-primary">
               <img src="https://www.headstartcourses.org.uk/wp-content/uploads/2020/05/Computer-Classes-for-Kids.jpg" class="card-img-top" alt=""/>
               <div class="card-body text-center">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Networking Hardwera</h5>
+                <p class="card-text">Some quick example text to build </p>
                 <Button variant="contained" color="secondary">
                   Read More
                 </Button>
@@ -110,132 +75,39 @@ function AboutUs() {
 
 
 
-       <section >
+       <section className='bg-light' >
           <div className="container my-3 py-5 text-center">
             <div className="row mb-5">
               <div className='col-'>
                 <h1>Our Team</h1>
-                <p className="mt-3 text-mute">The LogiQ, the best website development and digital marketing company in the USA, offers a 360-degree digital services portfolio</p>
+                <p className="mt-3 text-mute">The LogiQ, the best website development </p>
               </div>
+      <div class="row mt-3">
+      <div class="col-lg-4 ">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
+        <h2>Heading</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2>Heading</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2>Heading</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+          </div>
             </div>
 
-                <div className="row ">
-                  <div className="col-lg-3 col-md-6">
-                      <div className='card'>
-                        <div className='card-body'>
-                          <img src="https://download.cnet.com/a/img/resize/392c42bcf7a4964dc8be1b2a384573a8024bea42/catalog/2018/09/17/5f62d071-0406-4bc0-bfcd-9936206c3222/imgingest-456472590754299888.png?auto=webp&fit=crop&width=64" className="img-fluid rounded-circle w-50 mb-3"alt=""/>
-                         <h3>Name.....</h3>
-                         <h5>Lead Writer</h5>
-                         <p>Website Design is a WordPress website design  </p>
-                         <div className='d-flex flex-row justify-content-center'>
-                           <div className='p-4'>
-                             <NavLink to='#'>
-                               <i className='fas fa-facebook'></i>
-                             </NavLink>
-                           </div>
-                           <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-twitter'></i>
-                             </NavLink>
-                           </div>
-                           <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-instagram'></i>
-                             </NavLink>
-                           </div>
-                           
-                         </div>
-
-                        </div>
-                      </div>
-                  </div>
-
-                  <div className="col-lg-3 col-md-6">
-                    <div className='card'>
-                      <div className='card-body'>
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksTvoARH_Q8ft6DZnIrB2C5LTUO9BuEfDGl6JGwXUgv8MfjxOA2LoN93nLpdIPVO67gs&usqp=CAU'alt="" className='img-fluid rounded-circle w-50 mb-3'/>
-                        <h3>Nikki</h3>
-                        <h5>Tally erp9</h5>
-                        <p>Tally Solutions Pvt. Ltd. is an Indian multinational</p>
-                        <div className='d-flex flex-row justify-content-center'>
-                            <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-facebook'></i>
-                             </NavLink>
-                           </div>
-                           <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-instagram'></i>
-                             </NavLink>
-                           </div>
-                           <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-twitter'></i>
-                             </NavLink>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="col-lg-3 col-md-6">
-                    <div className='card'>
-                      <div className='card-body'>
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksTvoARH_Q8ft6DZnIrB2C5LTUO9BuEfDGl6JGwXUgv8MfjxOA2LoN93nLpdIPVO67gs&usqp=CAU'alt="" className='img-fluid rounded-circle w-50 mb-3'/>
-                        <h3>Nikki</h3>
-                        <h5>Tally erp9</h5>
-                        <p>Tally Solutions Pvt. Ltd. is an Indian multinational</p>
-                        <div className='d-flex flex-row justify-content-center'>
-                            <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-facebook'></i>
-                             </NavLink>
-                           </div>
-                           <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-instagram'></i>
-                             </NavLink>
-                           </div>
-                           <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-twitter'></i>
-                             </NavLink>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-3 col-md-6">
-                    <div className='card'>
-                      <div className='card-body'>
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksTvoARH_Q8ft6DZnIrB2C5LTUO9BuEfDGl6JGwXUgv8MfjxOA2LoN93nLpdIPVO67gs&usqp=CAU'alt="" className='img-fluid rounded-circle w-50 mb-3'/>
-                        <h3>Nikki</h3>
-                        <h5>Tally erp9</h5>
-                        <p>Tally Solutions Pvt. Ltd. is an Indian multinational</p>
-                        <div className='d-flex flex-row justify-content-center'>
-                            <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-facebook'></i>
-                             </NavLink>
-                           </div>
-                           <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-instagram'></i>
-                             </NavLink>
-                           </div>
-                           <div className='p-4'>
-                             <NavLink to="#">
-                             <i className='fas fa-twitter'></i>
-                             </NavLink>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
+        
 
           </div>
        

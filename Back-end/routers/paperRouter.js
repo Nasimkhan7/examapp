@@ -44,4 +44,17 @@ router.get("/getbyid/:id", (req, res) => {
     });
 });
 
+
+router.get("/getbyauthor/:id", (req, res) => {
+  Model.find({author : req.params.id})
+    .then((data) => {
+      console.log(data);
+      res.status(200).json(data);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).json(err);
+    });
+});
+
 module.exports = router;
